@@ -32,6 +32,23 @@
       <configuration>
         <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
       </configuration>
+      <executions>
+        <execution>
+          <id>deploy-file</id>
+          <phase>deploy</phase>
+          <goals>
+            <goal>deploy-file</goal>
+          </goals>
+          <configuration>
+            <file>lib/dexlib.jar</file>
+            <url>file://${project.build.directory}/mvn-repo</url>
+            <repositoryId>github</repositoryId>
+            <groupId>net.sridharan</groupId>
+            <artifactId>dexlib</artifactId>
+            <version>1.3.4.custom</version>
+          </configuration>
+        </execution>
+      </executions>      
     </plugin>
     <plugin>
       <groupId>com.github.github</groupId>

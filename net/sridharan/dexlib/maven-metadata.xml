@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>net.sridharan</groupId>
-  <artifactId>my-app</artifactId>
+  <artifactId>dexlib</artifactId>
   <versioning>
+    <release>1.3.4.custom</release>
     <versions>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.3.4.custom</version>
     </versions>
     <lastUpdated>20170325180612</lastUpdated>
   </versioning>
